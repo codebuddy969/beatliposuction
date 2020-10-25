@@ -1,0 +1,10 @@
+
+#accordion-section-kale_section_theme_info .accordion-section-title{background-color:#BEA5D0; color:#fff}
+#accordion-section-kale_section_theme_info .customize-control-description a{color:#6f26ac; text-decoration:underline;}
+#accordion-section-kale_section_theme_info .customize-control-description .button{background-color:#BEA5D0; color:#fff; text-decoration:none;}
+#customize-theme-controls #accordion-section-kale_section_theme_info .accordion-section-title:after { color: #ffffff; }
+
+/*
+#customize-theme-controls li[id*='kale'] .accordion-section-title {
+    border-left: 4px solid red;
+} */

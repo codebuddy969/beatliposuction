@@ -1,0 +1,237 @@
+== Changelog ==
+
+* 2.1
+* 3/11/2018
+* Fix: remove_filter only when kale_override_jetpack_share_styling == 1
+* Fix: Share options for pages
+* Fix: Adjusted formatting of header-row-1 widgets
+* Fix: Default value for number_of_posts in template-recipe-index.php
+* Fix: Meta box field for recipe index "_recipe_index_meta[number_of_posts]" changed to type number
+* Fix: Slider auto play duration fixed
+* Fix: get_template_directory_uri instead of get_stylesheet_directory_uri in meta_boxes/meta_boxes.php
+* Update: Bootstrap updated to version 3.3.7
+* Update: Search results title
+* Update: Documentation link updated to https://help.lyrathemes.com/#collection-181
+* Update: Sidebar Size option moved to "General Settings" section
+* Update: Slider Settings moved inside "Front Page" section
+* Update: Menu Settings moved inside "Menus"
+* Update: WooCommerce options moved inside "WooCommerce"
+* Update: WooCommerce templates updated (3.3.0)
+* Update: Updated wpml-config.xml
+* Update: .pot file
+* Update: Removed embed_oembed_html filter
+* New: Added option to show/hide next/prev posts nav "kale_posts_posts_nav_show"
+* New: Removed bundled Kirki, recommending via TGM-Plugin-Activation, added fallback class and Kirki installation message in Customizer
+
+= 2.0.1
+* 11/17/2017
+* Fix: Default gallery was not responsive
+* Fix: Kirki Switch control data format changed (in 3.0.15), created new function `kirki_update_3015` to convert previous values 
+* Fix: Kirki Switch control data format changed (in 3.0.15), updated customize/customize.php
+* Fix: Switch styling update
+* Updated: Kirki to 3.0.15
+* Updated: one-click-demo-import/kale-pro-options.dat
+
+= 2.0
+* 10/28/2017
+* Fix: WooCommerce "upsell" carousels were not building correctly when number of items was less than 4
+* Fix: Undefined variable $kale_str in parts/entry.php
+* Fix: Checked for arrays in meta_box_recipe_index.php
+* Fix: Removed hentry class from archive pages to prevent structured data errors
+* Fix: shortcodes.php, hr and min should be translatable!
+* Updated: image.php template to include image caption and added some styling
+* Updated: en_US.pot file
+* Updated: Kirki to 3.0.11
+* Updated WooCommerce templates to be compatible with latest version 3.2.1
+	Removed: cart/cart-shipping.php, cart/shipping-calculator.php, checkout/thankyou.php
+	Updated: global/quantity-input.php, single-product-reviews.php
+* Updated: style-rtl.css file
+* Updated: Documentation link to online documentation (instead of .pdf)
+* Updated: Removed some custom customizer styles
+* New: Added main nav fixed to top option
+* New: Added new menu options area in the Customizer
+* New: Added option to turn off SmartMenus
+* New: Added new slider options area in the Customizer
+* New: Added slider controls (auto play, fade, slide speed)
+* New: Changed .json link for theme updates.
+
+= 1.8
+* 09/25/2017
+* Fix: Notice: Undefined index: text-transform in kale-pro/functions.php on line 208
+* Fix: Print label is now translatable in shortcodes.php
+* Fix: WooCommerce Shipping methods heading overlaps text
+* New: Automatically responsive embedded YouTube videos
+* New: Integrated SmartMenus for on hover, multilevel menus
+* New: Third level menus enabled
+* New: Option to enable main parent node for dropdowns
+* New: "Jump to Recipe" option added for posts that have the recipe shortcode
+* New: Option to rearrange front page sections using drag and drop controls
+
+= 1.7.1
+* 07/07/2017
+* Update checker fix
+
+= 1.7
+* 07/07/2017
+* Fix for slider overlay
+* Updated WooCommerce templates:
+  * Removed: cart/cart-empty.php, cart/mini-cart.php, checkout/form-shipping.php, checkout/terms.php
+  * Updated: cart/cart-shipping.php, cart/cart.php, checkout/form-billing.php, single-product/product-image.php
+  * Also Removed: cart/cart-item-data.php, cart/cross-sells.php, checkout/cart-errors.php, checkout/form-login.php, checkout/form-pay.php, notices/notice.php, single-product/meta.php, single-product/price.php, single-product/related.php, single-product/review-meta.php
+* Separated WooCommerce JS into separate file kale-woocommerce.js.
+* Fix for shop category view display
+* Prefixed JS functions with "kale_"
+* Updated checkout page login form input classes, select dropdown highlight color
+* NEW: Added WooCommerce product category sidebar
+* NEW: Added option to link slide image to URL directly and hide captions
+* NEW: Added category specific sidebar
+
+= 1.6.1 =
+* 06/17/2017
+* Fix for slider on IE
+* Fix for meta links
+* Fix for Slick slider when WooCommerce is not enabled
+* Fix for video post in single.php
+
+= 1.6 =
+* 06/11/2017
+* Fixed padding for social media icons
+* Footer row 3, custom menu inline styling
+* Fixed: Logo is no longer h1 on internal pages
+* Fixed: Underlined items on static front page
+* Updated: Kirki to 2.3.8
+* Updated: RTL CSS
+* NEW: Complete WooCommerce integration added (shop, cart, product, checkout pages)
+* NEW: Added WooCommerce sidebars
+* NEW: Added WooCommerce options (layout/sidebars)
+
+= 1.5 = 
+* 05/17/2017
+* Removed esc_html from get_the_archive_title
+* Sorted default recipe index categories by ID
+* Added CSS rules to automatically make Vimeo and YouTube videos responsive
+* footer-widgets img responsive
+* Updated wp_bootstrap_navwalker to show item title
+* Fixed missing entry-title, author, updated errors (https://www.wpcub.com/fix-missing-required-field-entry-titleupdatehcard-error-in-wordpress/)
+* Updated custom_css.php to include accent color for links
+* Updated CSS and not showing two text columns (showing it in one column instead) on smaller screens under highlight post
+* NEW: kale_override_jetpack_share_styling added
+* NEW: Added ability to link to featured pages instead of posts (`kale_frontpage_featured_posts_type`)
+* NEW: Added ability to drag/sort the categories to show on the recipe index template
+
+= 1.4 = 
+* 04/16/2017
+* Author name, link was missing on single.php
+* Visibility of links in content was bad, added underline
+* Fixed carousel caption on Safari
+* Created better HTML structure for front page sections
+* Updated woocommerce.php
+* Added warning for one-click demo import
+* Formatted <strong> ingredients to have greater line height so "sections" can be created
+* Added add_theme_support('woocommerce')
+* Updated lang file
+* NEW: Added option to use full image sizes for slider (flexible) `kale_frontpage_custom_slider_flexible`
+* NEW: Added option to remove sidebar on home page `kale_blog_feed_sidebar_show`
+* NEW: Added WooCommerce styling
+* NEW: Added WooCommerce sidebar
+* NEW: Added new option to control sidebar size (1/4 or 1/3) `kale_sidebar_size`
+* NEW: Added new option to control banner/slider overlay and overlay color `kale_frontpage_banner_overlay_color` and `kale_frontpage_banner_overlay_show`
+* NOTE: Not adding H1 to the logo: https://www.youtube.com/watch?v=fBLvn_WkDJ4
+
+= 1.3.2 =
+* 03/11/2017
+* Special front page layout available for static front pages as well
+* Added "kale_example_content" check that disables all default/sample images. Set to "on" by default.
+* Added RTL support
+* Added option to add ad code
+* Gallery formatting
+* Fixed alignment issues for header widgets when one of the header widgets was blank
+* used esc_html__() instead of __() in customizer.php
+
+= 1.3.1 =
+* 01/19/2017
+* Recipe card print option added
+* About Me widget added
+* Bad character in shortcodes.js fixed
+* Owl carousel CSS tweaked to fix slider (Asep)
+* Removed kale_title() and replaced with kale_archive_title() for get_the_archive_title
+* one-click-demo-import/kale-pro-widgets.wie updated
+
+= 1.3 =
+* 12/30/2016 
+* Advanced > Custom CSS field is only showed if necessary 
+* Migrate current custom css to core custom css field, remove theme custom css field
+* All functions wrapped in function_exists
+* One click demo import added
+* Set all default values to 1 for posts and categories (eliminated get_random_post and get_random_category)
+* Fancy scrollbar added
+* `Recent Posts` label for blog feed now editable
+* embed_oembed_html to automatically wrap embedded videos in <div class="iframe-video"> .. </div>
+* Instagram feed carousel in the sidebar
+* Sticky sidebar tested - not complete yet
+* 404 pages formatting
+* Added video post format
+* Fix recent posts widget formatting (after plugin update)
+* Added option for category page with sidebar
+* Added checkboxes for categories in meta box for Recipe Index template
+* Renamed page-full.php to template-full.php
+* Renamed page-recipe-index.php to template-recipe-index.php
+* Formatting added for Mailchimp form embed
+* Basic WooCommerce template added
+* WPML integration complete
+
+= 1.2 =
+* 10/30/216
+* Recipe shortcode builder added
+* Single quote was breaking recipe shortcode - fixed
+* Responsive logo
+* Font size for text logo on smaller screens adjusted
+* Instagram widget "follow me" text formatting
+* Updated font-awesome version to 4.7
+* Slider set to auto play
+* file_get_contents replaced with global variable for loading custom typography settings
+* Partial integration with WPML - still waiting for response from WPML on slider and featured/diary posts
+* Prevents theme from checking wp.org for latest update
+* kirki-config.php updated to reference get_template_directory_uri
+
+= 1.1.5 =
+* 09/01/2016
+* Theme update checker fix
+
+= 1.1.4 =
+* 31/08/2016 
+* Adjusted h3 size
+* Increased contrast for banner, slider items
+* Justified text for excerpts
+* Bordered sidebar padding increased
+* Social menus font-awesome classes fixed
+* Adjusted width of search box for medium width screens
+* Made changes to recipe shortcode styling
+* Spacing/padding fixes in footer rows
+* Related posts bug fix
+
+= 1.1.3 =
+* 8/14/2016
+* Recent Posts with Thumbnails styling fixed
+* Footer wording fixed
+
+= 1.1.2 =
+* 7/16/2016
+* Dropdown nav active styling
+* Fixed bug with highlight/large post share feature
+* Removed call to wp_site_icon() from header.php
+
+= 1.1.1 =
+* Changed background of search field in nav
+* Fixed kirki 'settings' key in each field, was misspelled 'setting'.
+
+
+= 1.1 =
+* Banner/posts slider bug (Owl Carousel limitation of a single slide addressed)
+* Focus on search field on click
+* Formatting of comments
+
+
+= 1.0 =
+* Initial release
+* Released: June 18, 2016
