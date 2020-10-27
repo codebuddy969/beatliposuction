@@ -72,4 +72,8 @@
         width: 100%;
         height: auto;
     }
+    .bp-header-title,
+    .bp-header-subtitle {
+        text-align: center;
+    }
 }

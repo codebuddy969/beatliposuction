@@ -97,7 +97,11 @@
         <!-- /Header Row 2 -->
 
         <div class="mobile-header-banner">
-            <?php if(is_active_sidebar('sidebar-default')) { ?><div class="sidebar-default sidebar-block sidebar-no-borders"><?php dynamic_sidebar('sidebar-default'); ?></div><?php } ?>
+            <?php if(is_active_sidebar('sidebar-default')) { ?>
+                <div class="sidebar-default sidebar-block sidebar-no-borders">
+                    <!-- <?php dynamic_sidebar('sidebar-default'); ?> -->
+                </div>
+            <?php } ?>
         </div>
 
         <!-- Header Row 3 -->
